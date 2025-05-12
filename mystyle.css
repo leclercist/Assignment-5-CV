@@ -138,48 +138,45 @@ body {
 
 .languages {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .language-entry {
-  flex: 1;
-  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .language-entry label {
+  min-width: 80px;
   font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-  color: #2f1b0c;
-  text-align: center;
+  color: #2f1b0c; /* Dark chocolate */
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 8px;
+  background: #d2b48c; /* Tan slider track */
   border-radius: 5px;
-  background: #d2b48c;
   outline: none;
-  transition: background 450ms ease-in;
-  margin-top: 5px;
 }
 
-/* Match slider thumb and track colors */
+/* Chrome & Safari Thumb */
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #5c3a21;
+  background: #5c3a21; /* Deep brown thumb */
   cursor: pointer;
   border: 2px solid #fff;
-  margin-top: -5px;
 }
 
+/* Firefox Thumb */
 .slider::-moz-range-thumb {
   width: 18px;
   height: 18px;
